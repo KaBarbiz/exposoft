@@ -1,0 +1,123 @@
+<html>
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>agenda</title>
+    <link rel="stylesheet" href="../css/menu.css">
+    <link rel="stylesheet" href="../css/rodape.css">
+    <link rel="stylesheet" href="../css/agendamento.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+        integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+</head>
+
+<body>
+    <!-- menu -->
+    <script src="../js/menu.js"></script>
+    <header id="header">
+        <div class="cxlogo">
+            <img class="logo" src="../img/Jacquin.png">
+        </div>
+        <nav id="nav">
+            <button aria-label="Abrir Menu" id="btn-mobile" aria-haspopup="true" aria-controls="menu"
+                aria-expanded="false">
+                <span id="hamburger"></span>
+            </button>
+            <ul id="menu" role="menu">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="agendamento.html">agendamento</a></li>
+                <li><a href="sobrenos.html">sobre nos</a></li>
+                <li class="menu-cardapio"><a href="cardapio.html">cardapio</a>
+                    <ul>
+                        <li><a href="#pratos">Pratos Principais</a></li>
+                        <li> <a href="#entradas">Entredas</a></li>
+                        <li><a href="#sobremesas"> Sobremesas</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+        <div class="cxlogin">
+            <a href="login.html">
+                <button type="image" class="btn"><img class="imagebtn" src="../img/R.png"></button>
+                <div>
+            </a>
+        </div>
+    </header>
+
+    <!-- fim do menu -->
+
+    <!-- caixa cadastro -->
+    <div class="boxlg">
+        <div class="info">
+            Horario de abertura do retaurante as 10:00
+            <br>
+            Horario de fechamento do restaurante as 23:00
+        </div><br>
+        <div class="box">
+            <form method="post" action="">
+                <div class="aviso"> -Agende seu Horario-</div><br>
+                Data<input type="date" name="data" placeholder="Data" required /><br>
+                Numero de Messa <input type="number" min="1" max="12" name="numerodemesas" placeholder="Numero da Messa"
+                    required /><br>
+                Horario <input type="time" min="10:00" max="23:00" name="horario" placeholder="Horario" required /><br>
+                <input type="submit" name="cadastrar" valor="cadastrar">
+            </form>
+        </div>
+    </div>
+    <!-- fim da caixa cadastro  -->
+
+    <!-- footer -->
+    <footer>
+        <section class="footer">
+            <p class="copyright">
+                Moretti Ristorante
+            </p>
+            <div class="social">
+                <a href="#"><i class="fab fa-instagram"></i></a>
+                <a href="#"><i class="fab fa-facebook-f"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+            </div>
+            <ul class="list">
+                <li>
+                    <a href="index.html">Home</a>
+                </li>
+                <li>
+                    <a href="cardapio.html">Cardapio</a>
+                </li>
+                <li>
+                    <a href="agendamento.html">Agenda</a>
+                </li>
+                <li>
+                    <a href="sobrenos.html">Sobre Nos</a>
+                </li>
+            </ul>
+        </section>
+    </footer>
+    <!-- fim do footer -->
+</body>
+
+</html>
+
+
+<?php
+
+if(isset($_POST['cadastrar'])){
+
+  $conexao=mysqli_connect("localhost","root","","login");
+
+        $numerodemesas=$_POST['numerodemesas'];
+        $data=$_POST['data'];
+       $horario=$_POST['horario'];
+             
+   $sql="INSERT INTO agenda (numerodemesas,data,horario) VALUES (' $numerodemesas ',' $data ',' $horario')";
+    
+    $teste=mysqli_query($conexao,$sql);
+
+}
+
+?>

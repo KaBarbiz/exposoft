@@ -1,0 +1,210 @@
+body, ul {
+  margin: 0px;
+  padding: 0px;
+
+}
+
+
+a {
+  color: black;
+  text-decoration: none;
+  font-family: sans-serif;
+}
+
+a:hover {
+  border: black solid 1px;
+
+  transition: 1s;
+
+}
+
+
+#header {
+  box-sizing: border-box;
+  height: 70px;
+  padding: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #be1414;  
+
+  box-shadow: 0px 0px 40px #303030ef, 0px 0px 20px #4e4e4efd;
+
+}
+
+#menu {
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  list-style: none;
+  gap: 0.5rem;
+}
+
+#menu a {
+  display: block;
+  padding: 0.5rem;
+}
+
+#btn-mobile {
+  display: none;
+}
+
+.btn {
+  float: right;
+}
+#menu li:hover ul{
+  visibility: visible
+}
+#menu li ul{
+  list-style: none;
+  z-index: 1;
+  position: absolute;
+  visibility: hidden;
+}
+#menu a:hover {
+
+  background-color: #ff0000;
+
+  color: white;
+  transition: 1s;
+}
+
+#menu li a {
+  font-weight: bold;
+  padding: 20px;
+  display: block;
+  text-decoration: none;
+  text-align: center;
+  background-color: #be1414;  
+  color: rgb(0, 0, 0);
+  border-radius: 2px 2px 2px 2px;
+}
+
+.logo {
+  width: 100%;
+  height: 70px;
+
+}
+
+@media (min-width:750px) {
+  .cxlogo {
+    width: 20%;
+  }
+
+  #nav {
+    width: 70%;
+  }
+#menu li{
+  width: auto;
+}
+  #menu .menu-cardapio{
+    width: 170px;
+  }
+  .cxlogin {
+    width: 10%;
+  }
+}
+
+@media (max-width: 749px) {
+  .cxlogo {
+    width: 40%;
+  }
+
+  #nav {
+    width: 50%;
+  }
+
+  .cxlogin {
+    width: 20%;
+  }
+  
+  #menu li ul{
+    list-style: none;
+  width: 100%;
+    position: absolute;
+    visibility: visible
+  }
+  #menu {
+    display: block;
+    position: absolute;
+    width: 100%;
+    top: 70px;
+    right: 0px;
+    transition: 0.6s;
+    z-index: 1000;
+    height: 0px;
+    visibility: hidden;
+    overflow-y: hidden;
+  }
+
+  #nav.active #menu {
+    height: calc(100vh - 70px);
+    visibility: visible;
+    overflow-y: auto;
+
+  }
+
+  #menu a {
+    padding: 1rem 0;
+    margin: 0 1rem;
+    border-bottom: 2px solid rgba(0, 0, 0, 0.05);
+  }
+
+  #btn-mobile {
+    display: flex;
+    padding: 0.5rem 1rem;
+    font-size: 1rem;
+    border: none;
+    background: none;
+    cursor: pointer;
+    gap: 0.5rem;
+    position: relative;
+    float: right;
+  }
+
+  #hamburger {
+    position: relative;
+    float: right;
+    color: #000000ef;
+    border-top: 2px solid;
+    width: 20px;
+  }
+
+  #hamburger::after,
+  #hamburger::before {
+    content: '';
+    display: block;
+    width: 20px;
+    height: 2px;
+    background: currentColor;
+    margin-top: 5px;
+    transition: 0.3s;
+    position: relative;
+  }
+
+  #nav.active #hamburger {
+    border-top-color: transparent;
+  }
+
+  #nav.active #hamburger::before {
+    transform: rotate(135deg);
+  }
+
+  #nav.active #hamburger::after {
+    transform: rotate(-135deg);
+    top: -7px;
+  }
+}
+
+.imagebtn {
+  width: 100%;
+  height: auto;
+
+}
+
+.btn {
+
+  background-color: #be1414;  
+  border: #be1414;  
+  border-radius: 50%;
+}

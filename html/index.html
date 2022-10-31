@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/menu.css">
+    <link rel="stylesheet" href="../css/estiloautom.css">
+    <link rel="stylesheet" href="../css/rodape.css">
+    <link rel="stylesheet" href="../css/homedivbox.css">
+    <!-- prevalece o ultimo -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+        integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Morreti Ristorante</title>
+</head>
+
+<body>
+    <script src="../js/menu.js"></script>
+
+    <!-- menu -->
+    <header id="header">
+        <div class="cxlogo">
+            <img class="logo" src="../img/Jacquin.png">
+        </div>
+        <nav id="nav">
+            <button aria-label="Abrir Menu" id="btn-mobile" aria-haspopup="true" aria-controls="menu"
+                aria-expanded="false">
+                <span id="hamburger"></span>
+            </button>
+            <ul id="menu" role="menu">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="agendamento.html">agendamento</a></li>
+                <li><a href="sobrenos.html">sobre nos</a></li>
+                <li class="menu-cardapio"><a href="cardapio.html">cardapio</a>
+                    <ul> <li><a href="#pratos">Pratos Principais</a></li>
+                    <li> <a href="#entradas">Entredas</a></li>
+                    <li><a href="#sobremesas"> Sobremesas</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+        <div class="cxlogin">
+            <a href="login.html">
+                <button type="image" class="btn"><img class="imagebtn" src="../img/R.png"></button>
+                <div>
+            </a>
+        </div>
+    </header>
+    <!-- fim menu -->
+
+    <!-- slideshow -->
+    <h3>Mais Pedidos da Semana</h3>
+    <div class="slider">
+        <div class="slides">
+            <!--dots-->
+            <input type="radio" name="radio-btn" id="radio1">
+            <input type="radio" name="radio-btn" id="radio2">
+            <input type="radio" name="radio-btn" id="radio3">
+            <input type="radio" name="radio-btn" id="radio4">
+            <input type="radio" name="radio-btn" id="radio5">
+            <!--dots end-->
+            <!--iamages-->
+            <div class="slide first">
+                <img src="../img/slidebruschetta.jpg" alt="dante de devil may cry">
+            </div>
+            <div class="slide">
+                <img src="../img/slidegelato.jpeg" alt="Nero de devil may cry">
+            </div>
+            <div class="slide">
+                <img src="../img/slidemacarrao.jpg" alt="V de devil may cry">
+            </div>
+            <div class="slide">
+                <img src="../img/slidenhoquer.jpg" alt="Vergil de devil may cry">
+            </div>
+            <div class="slide">
+                <img src="../img/slidetiranusu.jpg" alt="Urizen de devil may cry">
+            </div>
+            <!--iamages end-->
+            <!--navigation auto-->
+            <div class="navigation-auto">
+                <div class="auto-btn1"></div>
+                <div class="auto-btn2"></div>
+                <div class="auto-btn3"></div>
+                <div class="auto-btn4"></div>
+                <div class="auto-btn5"></div>
+            </div>
+        </div>
+        <div class="manual-navigation">
+            <label for="radio1" class="manual-btn"></label>
+            <label for="radio2" class="manual-btn"></label>
+            <label for="radio3" class="manual-btn"></label>
+            <label for="radio4" class="manual-btn"></label>
+            <label for="radio5" class="manual-btn"></label>
+        </div>
+    </div>
+    <script src="../js/slideautom.js"></script>
+    <!-- fim do slideshow -->
+
+    <!-- home conteudo -->
+    <h3>Nosso Restaurante</h3>
+    <div class="container">
+        <div class="imagemh">
+            <img src="../img/restaurante.jpg" alt="">
+        </div>
+        <div class="textoh">
+            <h1>Morreti Ristorante</h1>
+            <p> O Moretti Ristorante, é um restaurante foca apenas
+                em comidas descendentes italianas ou próprias
+                da Itália, tentamos ao máximo fazer com que você se
+                sinta na própria Torre de Pisa é o mais fiel possível
+                aos seus ingredientes, chegando a algo que relembre
+                o paladar original dos próprios italianos.</p>
+        </div>
+    </div>
+    <!-- fim home conteudo -->
+
+    <!-- footer -->
+    <footer>
+        <section class="footer">
+            <p class="copyright">
+                Moretti Ristorante
+            </p>
+            <div class="social">
+                <a href="#"><i class="fab fa-instagram"></i></a>
+                <a href="#"><i class="fab fa-facebook-f"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+            </div>
+            <ul class="list">
+                <li>
+                    <a href="index.html">Home</a>
+                </li>
+                <li>
+                    <a href="cardapio.html">Cardapio</a>
+                </li>
+                <li>
+                    <a href="agendamento.html">Agenda</a>
+                </li>
+                <li>
+                    <a href="sobrenos.html">Sobre Nos</a>
+                </li>
+            </ul>
+        </section>
+    </footer>
+    <!-- fim do footer -->
+</body>
+
+
+</html>

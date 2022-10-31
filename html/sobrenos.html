@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quem Somos</title>
+    <link rel="stylesheet" href="../css/menu.css">
+    <link rel="stylesheet" href="../css/homedivbox.css">
+    <link rel="stylesheet" href="../css/rodape.css">
+    <link rel="stylesheet" href="../css/teste.css">
+    <link rel="stylesheet" href="../css/quemsomos.css">
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link rel="stylesheet" href="">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+        integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+    <!-- menu -->
+    <header id="header">
+        <div class="cxlogo">
+            <img class="logo" src="../img/Jacquin.png">
+        </div>
+        <nav id="nav">
+            <button aria-label="Abrir Menu" id="btn-mobile" aria-haspopup="true" aria-controls="menu"
+                aria-expanded="false">
+                <span id="hamburger"></span>
+            </button>
+            <ul id="menu" role="menu">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="agendamento.html">agendamento</a></li>
+                <li><a href="sobrenos.html">sobre nos</a></li>
+                <li class="menu-cardapio"><a href="cardapio.html">cardapio</a>
+                    <ul> <li><a href="#pratos">Pratos Principais</a></li>
+                    <li> <a href="#entradas">Entredas</a></li>
+                    <li><a href="#sobremesas"> Sobremesas</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+        <div class="cxlogin">
+            <a href="login.html">
+                <button type="image" class="btn"><img class="imagebtn" src="../img/R.png"></button>
+                <div>
+            </a>
+        </div>
+    </header>
+    <script>
+        const btnMobile = document.getElementById('btn-mobile');
+        
+        function toggleMenu(event) {
+            if (event.type === 'touchstart') event.preventDefault();
+            const nav = document.getElementById('nav');
+            nav.classList.toggle('active');
+            const active = nav.classList.contains('active');
+            event.currentTarget.setAttribute('aria-expanded', active);
+            if (active) {
+                event.currentTarget.setAttribute('aria-label', 'Fechar Menu');
+            } else {
+                event.currentTarget.setAttribute('aria-label', 'Abrir Menu');
+            }
+        }
+        btnMobile.addEventListener('click', toggleMenu);
+        btnMobile.addEventListener('touchstart', toggleMenu);
+        </script>
+    <!-- fim do menu -->
+
+    <!-- quem somos -->
+    <div class="container-all">
+        <div class="card">
+            <div class="picture">
+                <img class="perfil" src="../img/vinimika.jpg" alt="">
+            </div>
+            <div class="text-card">
+                <h2 class="text-main">Vinicius Mikael</h2>
+                <p class="desc">Responsavel pelo cadastro e login, agenda,
+                    por nosso banco de dados e também por nosso php usado na criação
+                    de nosso site.
+                </p>
+            </div>
+        </div>
+        <div class="card">
+            <div class="picture">
+                <img class="perfil" src="../img/kaue.jpg" alt="">
+            </div>
+            <div class="text-card">
+                <h2 class="text-main">Kaue Barbi</h2>
+                <p class="desc">Responsavel por nossa pagina home,
+                    nossa pagina quem somos, por nosso footer e por pesquisar
+                    e promover o conteudo do nosso cardapio.
+                </p>
+            </div>
+        </div>
+        <div class="card">
+            <div class="picture">
+                <img class="perfil" src="../img/vinirafa.jpg" alt="">
+            </div>
+            <div class="text-card">
+                <h2 class="text-main">Vinicius Rafael</h2>
+                <p class="desc">Responsavel pela criação de nosso cardapio,
+                    pela responsividade das paginas e por juntar nossas paginas
+                    de forma responsiva e sem conflitos entre elas.
+                </p>
+            </div>
+        </div>
+    </div>
+    <!-- fim quem somos -->
+
+    <!-- footer -->
+    <footer>
+        <section class="footer">
+            <p class="copyright">
+                Moretti Ristorante
+            </p>
+            <div class="social">
+                <a href="#"><i class="fab fa-instagram"></i></a>
+                <a href="#"><i class="fab fa-facebook-f"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+            </div>
+            <ul class="list">
+                <li>
+                    <a href="index.html">Home</a>
+                </li>
+                <li>
+                    <a href="cardapio.html">Cardapio</a>
+                </li>
+                <li>
+                    <a href="agendamento.html">Agenda</a>
+                </li>
+                <li>
+                    <a href="sobrenos.html">Sobre Nos</a>
+                </li>
+            </ul>
+        </section>
+    </footer>
+    </footer>
+    <!-- fim do footer -->
+</body>
+
+</html>
