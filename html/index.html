@@ -7,9 +7,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../css/menu.css">
-    <link rel="stylesheet" href="../css/estiloautom.css">
+
     <link rel="stylesheet" href="../css/rodape.css">
-    <link rel="stylesheet" href="../css/homedivbox.css">
+    <link rel="stylesheet" href="../css/conteudo.css">
     <!-- prevalece o ultimo -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
         integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
@@ -17,39 +17,42 @@
     <title>Morreti Ristorante</title>
 </head>
 
-<body>
-    <script src="../js/menu.js"></script>
 
-    <!-- menu -->
-    <header id="header">
-        <div class="cxlogo">
-            <img class="logo" src="../img/Jacquin.png">
-        </div>
-        <nav id="nav">
-            <button aria-label="Abrir Menu" id="btn-mobile" aria-haspopup="true" aria-controls="menu"
-                aria-expanded="false">
-                <span id="hamburger"></span>
-            </button>
-            <ul id="menu" role="menu">
-                <li><a href="index.html">Home</a></li>
-                <li><a href="agendamento.html">Agendamento</a></li>
-                <li><a href="sobrenos.html">Quem Somos</a></li>
-                <li class="menu-cardapio"><a href="cardapio.html">Cardapio</a>
-                    <ul> <li><a href="#pratos">Pratos Principais</a></li>
+<!-- menu -->
+<header id="header">
+    <div class="cxlogo">
+        <img class="logo" src="../img/Jacquin.png">
+    </div>
+    <nav id="nav">
+        <button aria-label="Abrir Menu" id="btn-mobile" aria-haspopup="true" aria-controls="menu" aria-expanded="false">
+            <span id="hamburger"></span>
+        </button>
+        <ul id="menu" role="menu">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="agendamento.html">Agendamento</a></li>
+            <li><a href="sobrenos.html">Quem Somos</a></li>
+            <li class="menu-cardapio"><a href="cardapio.html">Cardapio</a>
+                <ul>
+                    <li><a href="#pratos">Pratos Principais</a></li>
                     <li> <a href="#entradas">Entredas</a></li>
                     <li><a href="#sobremesas"> Sobremesas</a></li>
-                    </ul>
-                </li>
-            </ul>
-        </nav>
-        <div class="cxlogin">
-            <a href="login.html">
-                <button type="image" class="btn"><img class="imagebtn" src="../img/R.png"></button>
-                <div>
-            </a>
-        </div>
-    </header>
-    <!-- fim menu -->
+                </ul>
+            </li>
+        </ul>
+    </nav>
+    <div class="cxlogin">
+        <a href="login.html">
+            <button type="image" class="btn"><img class="imagebtn" src="../img/R.png"></button>
+            <div>
+        </a>
+    </div>
+</header>
+
+<script src="../js/menu.js"></script>
+<!-- fim menu -->
+
+
+<body>
 
     <!-- slideshow -->
     <h3>Mais Pedidos da Semana</h3>

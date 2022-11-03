@@ -44,6 +44,7 @@
         </a>
     </div>
 </header>
+<script src="../js/menu.js"></script>
 <!-- fim do menu -->
 
 <body>
@@ -425,9 +426,9 @@
     </div>
     <!-- fim do cardapio -->
 
-<!-- botao up -->
-<a id="link-topo" href="">&#9650;</a>
-<!-- fim do botao up -->
+    <!-- botao up -->
+    <a id="link-topo" href="">&#9650;</a>
+    <!-- fim do botao up -->
 
 </body>
 <!-- footer -->
@@ -458,25 +459,6 @@
     </section>
 </footer>
 <!-- fim do footer -->
-<script>
 
-    const btnMobile = document.getElementById('btn-mobile');
-
-    function toggleMenu(event) {
-        if (event.type === 'touchstart') event.preventDefault();
-        const nav = document.getElementById('nav');
-        nav.classList.toggle('active');
-        const active = nav.classList.contains('active');
-        event.currentTarget.setAttribute('aria-expanded', active);
-        if (active) {
-            event.currentTarget.setAttribute('aria-label', 'Fechar Menu');
-        } else {
-            event.currentTarget.setAttribute('aria-label', 'Abrir Menu');
-        }
-    }
-
-    btnMobile.addEventListener('click', toggleMenu);
-    btnMobile.addEventListener('touchstart', toggleMenu);
-</script>
 
 </html>
