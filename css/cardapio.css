@@ -3,32 +3,28 @@
     padding: 0;
     box-sizing: border-box;
 }
+.logo {
+    border-radius: 0;
+}
 
 .cardapio-geral {
     z-index: -1;
 }
 
-.pageup {
-    background-color: blue;
-    width: 50px;
-    height: 50px;
-    border-radius: 50%;
-    float: right;
-    margin-right: 50px;
-    font-size: 25px;
-}
 
 img {
     /* responsividade imagem entrando */
     width: 100%;
     height: auto;
+    border-radius: 10%;
 }
+
 
 .cxtxteimg {
     position: relative;
     margin: 5px;
-    background-color: #be1414;
-
+    background-color: #F54A2E;
+    border-radius:  1%;
 }
 
 [class*="col-"] {
@@ -37,24 +33,40 @@ img {
 }
 
 #pratos {
-    color: #fff;
+    margin-top: 15px;
+    color: black;
+    padding: 20px;
+    font-size: 35px;
+    font-family: Arial, Helvetica, sans-serif;
+    text-shadow: rgba(255, 255, 255, 0.25) 0px 54px 55px, rgba(255, 255, 255, 0.12) 0px -12px 30px, rgba(255, 255, 255, 0.12) 0px 4px 6px, rgba(255, 255, 255, 0.17) 0px 12px 13px, rgba(255, 255, 255, 0.09) 0px -3px 5px;
     text-align: center;
 }
 
 #entradas {
-    color: #fff;
+    margin-top: 15px;
+    color: black;
+    padding: 20px;
+    font-size: 35px;
+    font-family: Arial, Helvetica, sans-serif;
+    text-shadow: rgba(255, 255, 255, 0.25) 0px 54px 55px, rgba(255, 255, 255, 0.12) 0px -12px 30px, rgba(255, 255, 255, 0.12) 0px 4px 6px, rgba(255, 255, 255, 0.17) 0px 12px 13px, rgba(255, 255, 255, 0.09) 0px -3px 5px;
     text-align: center;
 }
 
 #sobremesas {
-    color: #fff;
+    margin-top: 15px;
+    color: black;
+    padding: 20px;
+    font-size: 35px;
+    font-family: Arial, Helvetica, sans-serif;
+    text-shadow: rgba(255, 255, 255, 0.25) 0px 54px 55px, rgba(255, 255, 255, 0.12) 0px -12px 30px, rgba(255, 255, 255, 0.12) 0px 4px 6px, rgba(255, 255, 255, 0.17) 0px 12px 13px, rgba(255, 255, 255, 0.09) 0px -3px 5px;
     text-align: center;
 }
 
-#link-topo { /*botao page up */
+#link-topo {
+    /*botao page up */
     text-decoration: none;
-    color: #fff;
-    background-color: rgb(221, 107, 107);
+    color: #000;
+    background-color: #C23A25;
     border-radius: 50%;
     padding: 10px;
     position: fixed;
@@ -219,5 +231,5 @@ img {
 }
 
 body {
-    background-color: #000;
+    background-color: #F78A79;
 }

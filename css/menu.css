@@ -13,9 +13,7 @@ a {
 
 a:hover {
   border: black solid 1px;
-
   transition: 1s;
-
 }
 
 
@@ -26,8 +24,7 @@ a:hover {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  background-color: #C23A25;  
-
+  background-color: #C23A25;
   box-shadow: 0px 0px 40px #303030ef, 0px 0px 20px #4e4e4efd;
 
 }
@@ -52,20 +49,21 @@ a:hover {
 .btn {
   float: right;
 }
-#menu li:hover ul{
+
+#menu li:hover ul {
   visibility: visible
 }
-#menu li ul{
+
+#menu li ul {
   list-style: none;
   z-index: 1;
   position: absolute;
   visibility: hidden;
 }
+
 #menu a:hover {
-
-  background-color: #ff0000;
-
-  color: lightgray;
+  background-color: #C23A25;
+  color: #fff;
   transition: 1s;
 }
 
@@ -75,7 +73,7 @@ a:hover {
   display: block;
   text-decoration: none;
   text-align: center;
-  background-color: #C23A25;  
+  background-color: #C23A25;
   color: rgb(0, 0, 0);
   border-radius: 2px 2px 2px 2px;
 }
@@ -94,12 +92,15 @@ a:hover {
   #nav {
     width: 70%;
   }
-#menu li{
-  width: auto;
-}
-  #menu .menu-cardapio{
+
+  #menu li {
+    width: auto;
+  }
+
+  #menu .menu-cardapio {
     width: 170px;
   }
+
   .cxlogin {
     width: 10%;
   }
@@ -117,13 +118,14 @@ a:hover {
   .cxlogin {
     width: 20%;
   }
-  
-  #menu li ul{
+
+  #menu li ul {
     list-style: none;
-  width: 100%;
+    width: 100%;
     position: absolute;
     visibility: visible
   }
+
   #menu {
     display: block;
     position: absolute;
@@ -204,7 +206,7 @@ a:hover {
 
 .btn {
 
-  background-color: #be1414;  
-  border: #be1414;  
+  background-color: #be1414;
+  border: #be1414;
   border-radius: 50%;
 }
