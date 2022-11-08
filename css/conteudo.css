@@ -10,8 +10,8 @@ body {
 }
 
 
-
 .slider {
+    z-index: -1;
     border: solid 5px #F54A2E;
     margin: 0 auto;
     width: 800px;
