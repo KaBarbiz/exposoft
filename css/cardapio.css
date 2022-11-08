@@ -11,7 +11,6 @@
     z-index: -1;
 }
 
-
 img {
     /* responsividade imagem entrando */
     width: 100%;
@@ -28,7 +27,7 @@ img {
 }
 
 [class*="col-"] {
-    float: left;
+    float: left;    
     padding: 15px;
 }
 
