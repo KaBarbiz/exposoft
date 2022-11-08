@@ -1,3 +1,6 @@
+<?php
+include("phpagendamento.php");
+?>
 <html>
 
 <head>
@@ -9,7 +12,6 @@
     <link rel="stylesheet" href="../css/menu.css">
     <link rel="stylesheet" href="../css/rodape.css">
     <link rel="stylesheet" href="../css/agendamento.css">
-
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
         integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
@@ -30,11 +32,6 @@
             <li><a href="agendamento.html">Agendamento</a></li>
             <li><a href="quemsomos.html">Quem Somos</a></li>
             <li class="menu-cardapio"><a href="cardapio.html">Cardapio</a>
-                <ul>
-                    <li><a href="#pratos">Pratos Principais</a></li>
-                    <li> <a href="#entradas">Entredas</a></li>
-                    <li><a href="#sobremesas"> Sobremesas</a></li>
-                </ul>
             </li>
         </ul>
     </nav>
@@ -51,7 +48,9 @@
 
 <body>
 
-    <!-- caixa cadastro -->
+    <!-- agendamento -->
+    <div class="usu">
+    </div>
     <div class="boxlg">
         <div class="info">
             Horario de abertura do retaurante as 10:00
@@ -59,17 +58,26 @@
             Horario de fechamento do restaurante as 23:00
         </div><br>
         <div class="box">
-            <form method="post" action="">
+            <form method="post">
+                <div class="ola">
+                    Seja bem-vindo
+                    <?php echo $_SESSION['nome'];  ?>
+                    <a class="sair" href="logout.php">Sair</a>
+                </div>
+                <div></div>
                 <div class="aviso"> -Agende seu Horario-</div><br>
-                Data<input type="date" name="data" placeholder="Data" required /><br>
-                Numero de Messa <input type="number" min="1" max="12" name="numerodemesas" placeholder="Numero da Messa"
-                    required /><br>
-                Horario <input type="time" min="10:00" max="23:00" name="horario" placeholder="Horario" required /><br>
-                <input type="submit" name="cadastrar" valor="cadastrar">
+                <!- 2mesa=3 4mesa=6 6mesa=->
+                    Data<input type="date" name="data" placeholder="Data" required /><br>
+                    Horario <input type="time" min="10:00" max="23:00" name="horario" placeholder="Horario"
+                        required /><br>
+                    Mesa para 2 <input type="radio" name="lugarpara" value="2" required><br>
+                    Mesa para 4 <input type="radio" name="lugarpara" value="4" required><br>
+                    Mesa para 6 <input type="radio" name="lugarpara" value="6" required><br>
+                    <input type="submit" name="cadastrar" valor="cadastrar">
             </form>
         </div>
     </div>
-    <!-- fim da caixa cadastro  -->
+    <!-- fim do agendamento -->
 
     <!-- footer -->
     <footer>
@@ -102,22 +110,3 @@
 </body>
 
 </html>
-
-
-<?php
-
-if(isset($_POST['cadastrar'])){
-
-  $conexao=mysqli_connect("localhost","root","","login");
-
-        $numerodemesas=$_POST['numerodemesas'];
-        $data=$_POST['data'];
-       $horario=$_POST['horario'];
-             
-   $sql="INSERT INTO agenda (numerodemesas,data,horario) VALUES (' $numerodemesas ',' $data ',' $horario')";
-    
-    $teste=mysqli_query($conexao,$sql);
-
-}
-
-?>

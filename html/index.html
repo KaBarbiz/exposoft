@@ -31,11 +31,6 @@
             <li><a href="agendamento.html">Agendamento</a></li>
             <li><a href="quemsomos.html">Quem Somos</a></li>
             <li class="menu-cardapio"><a href="cardapio.html">Cardapio</a>
-                <ul>
-                    <li><a href="#pratos">Pratos Principais</a></li>
-                    <li> <a href="#entradas">Entredas</a></li>
-                    <li><a href="#sobremesas"> Sobremesas</a></li>
-                </ul>
             </li>
         </ul>
     </nav>
@@ -57,103 +52,47 @@
     <h3 class="titulo">Mais Pedidos da Semana</h3>
     <div class="slider">
         <center>
-        <div class="img-slider">
-            <div class="slide active">
-                <img src="../img/slidebruschetta.jpg" alt="">
-                <div class="info">
-                    <h2>Bruschetta</h2>
+            <div class="img-slider">
+                <div class="slide active">
+                    <img src="../img/slidebruschetta.jpg" alt="">
+                    <div class="info">
+                        <h2>Bruschetta</h2>
+                    </div>
+                </div>
+                <div class="slide">
+                    <img src="../img/slidetiranusu.jpg" alt="">
+                    <div class="info">
+                        <h2>Tiranusu</h2>
+                    </div>
+                </div>
+                <div class="slide">
+                    <img src="../img/slidemacarrao.jpg" alt="">
+                    <div class="info">
+                        <h2>Macarrao </h2>
+                    </div>
+                </div>
+                <div class="slide">
+                    <img src="../img/slidegelato.jpeg" alt="">
+                    <div class="info">
+                        <h2>Gelato</h2>
+                    </div>
+                </div>
+                <div class="slide">
+                    <img src="../img/slidenhoquer.jpg" alt="">
+                    <div class="info">
+                        <h2>Nhoque de Sugo</h2>
+                    </div>
+                </div>
+                <div class="navigation">
+                    <div class="btn active"></div>
+                    <div class="btn"></div>
+                    <div class="btn"></div>
+                    <div class="btn"></div>
+                    <div class="btn"></div>
                 </div>
             </div>
-            <div class="slide">
-                <img src="../img/slidetiranusu.jpg" alt="">
-                <div class="info">
-                    <h2>Tiranusu</h2>
-                </div>
-            </div>
-            <div class="slide">
-                <img src="../img/slidemacarrao.jpg" alt="">
-                <div class="info">
-                    <h2>Macarrao </h2>
-                </div>
-            </div>
-            <div class="slide">
-                <img src="../img/slidegelato.jpeg" alt="">
-                <div class="info">
-                    <h2>Gelato</h2>
-                </div>
-            </div>
-            <div class="slide">
-                <img src="../img/slidenhoquer.jpg" alt="">
-                <div class="info">
-                    <h2>Nhoque de Sugo</h2>
-                </div>
-                
-            </div>
-            <div class="navigation">
-                <div class="btn active"></div>
-                <div class="btn"></div>
-                <div class="btn"></div>
-                <div class="btn"></div>
-                <div class="btn"></div>
-            </div>
-        </div>
-    </center>
+        </center>
     </div>
-    <script type="text/javascript">
-        var slides = document.querySelectorAll('.slide');
-        var btns = document.querySelectorAll('.btn');
-        let currentSlide = 1;
-
-        // Javascript for image slider manual navigation
-        var manualNav = function (manual) {
-            slides.forEach((slide) => {
-                slide.classList.remove('active');
-
-                btns.forEach((btn) => {
-                    btn.classList.remove('active');
-                });
-            });
-
-            slides[manual].classList.add('active');
-            btns[manual].classList.add('active');
-        }
-
-        btns.forEach((btn, i) => {
-            btn.addEventListener("click", () => {
-                manualNav(i);
-                currentSlide = i;
-            });
-        });
-
-        // Javascript for image slider autoplay navigation
-        var repeat = function (activeClass) {
-            let active = document.getElementsByClassName('active');
-            let i = 1;
-
-            var repeater = () => {
-                setTimeout(function () {
-                    [...active].forEach((activeSlide) => {
-                        activeSlide.classList.remove('active');
-                    });
-
-                    slides[i].classList.add('active');
-                    btns[i].classList.add('active');
-                    i++;
-
-                    if (slides.length == i) {
-                        i = 0;
-                    }
-                    if (i >= slides.length) {
-                        return;
-                    }
-                    repeater();
-                }, 7000);
-            }
-            repeater();
-        }
-        repeat();
-    </script>
-
 
     <script src="../js/slideautom.js"></script>
     <!-- fim do slideshow -->

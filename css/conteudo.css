@@ -54,7 +54,7 @@ body {
 }
 
 .img-slider .slide .info h2 {
-    color: #fff;
+    color: #F54A2E;
     font-size: 45px;
     text-transform: uppercase;
     font-weight: 800;
@@ -81,7 +81,7 @@ body {
 }
 
 .img-slider .navigation .btn.active {
-    background: #2696E9;
+    background: #F54A2E;
     box-shadow: 0 0 2px rgba(0, 0, 0, 0.5);
 }
 
