@@ -45,7 +45,7 @@ var repeat = function (activeClass) {
                 return;
             }
             repeater();
-        }, 7000);
+        }, 5000);
     }
     repeater();
 }
