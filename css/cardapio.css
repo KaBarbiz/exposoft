@@ -3,14 +3,15 @@
     padding: 0;
     box-sizing: border-box;
 }
+
 .logo {
     border-radius: 0;
 }
 
 .cardapio-geral {
+    background-color: #F78A79;
     z-index: -1;
 }
-
 
 img {
     /* responsividade imagem entrando */
@@ -24,13 +25,15 @@ img {
     position: relative;
     margin: 5px;
     background-color: #F54A2E;
-    border-radius:  1%;
+    border-radius: 1%;
 }
 
 [class*="col-"] {
     float: left;
     padding: 15px;
 }
+
+
 
 #pratos {
     margin-top: 15px;

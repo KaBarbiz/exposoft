@@ -68,7 +68,7 @@ a:hover {
 }
 
 #menu li a {
-  font-weight: bold;
+  font-weight: bold;0
   padding: 20px;
   display: block;
   text-decoration: none;
@@ -79,9 +79,8 @@ a:hover {
 }
 
 .logo {
-  width: 100%;
+  /* width: 100%; */
   height: 70px;
-
 }
 
 @media (min-width:750px) {
