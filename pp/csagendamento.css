@@ -1,0 +1,130 @@
+  *{
+            padding: 0px;
+            margin: 0px;
+        }
+        body{
+      background-color: black;
+            display: flex;
+          align-items: center;
+            justify-content: center;
+         width: 100vw;
+  height: 100vh;
+           
+        }
+        .box{
+           
+            background: black;
+            border-radius: 20%;
+            justify-content: center;
+            display: flex;
+            align-items: center;
+            background: red;
+            width: 400px;
+            height: 400px;
+            text-align: center;
+             font-weight: bold;
+   
+        }
+    
+        .info{
+            text-align: center;
+            color: white;
+            font-size: 20px;
+            top: 20px;
+            display: flex;
+        }
+        
+        input[type="text"],[type="date"],[type="number"],[type="time"] {
+            width: 100%;
+border-radius:60px;
+            margin: 5px;
+       padding: 8px;
+            border:none;
+        }
+        
+        input[type="submit"]{
+              position: relative;
+           top: 20px;
+         background: black;
+            color: white;
+            margin: 15px;
+        width: 100%;
+            border-radius: 20px;
+        padding: 5px;
+            cursor: pointer;
+        }
+        
+        
+        input[type="submit"]:hover{
+color: white;
+            
+            transition: 1s;
+            text-shadow: 0px 0px 8px white;
+        
+        }
+        
+        
+        .aviso{
+margin: 2px;
+            font-weight: bold;
+        
+        }
+        
+        .boxlg{
+            text-decoration: none;
+            text-align: center;
+        }
+        .btncancel{
+            margin: 10px;
+background: white;
+width: 90%;
+            cursor: pointer;
+            padding: 10px;
+border-radius: 20px;
+        
+        
+        }
+        
+        .btncancel:hover{
+            color: red;
+            transition: 1s;
+        }
+        .usu{
+color: white;
+        }
+       input[type="radio"]{
+        margin: 10px;
+        cursor: pointer;
+        padding: 10px;
+            
+        }
+        
+        .agen{
+        text-align: center;
+        z-index: 1;
+        color: white;
+        position: absolute;
+        top: 480px;
+     
+        }
+.ola{
+       right: 0px;
+        color: white;
+        position: absolute;
+        font-size: 20px;
+        top: 90px;
+       left: 20px;
+        text-decoration: underline;
+        z-index: 1;
+        }
+        
+        .sair{
+        margin-left: 10px;
+           text-decoration: none;
+            color:white;
+        }
+        .sair:hover{
+            transition: 1s;
+          color: red;
+        }
+

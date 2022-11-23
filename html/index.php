@@ -27,17 +27,19 @@
             <span id="hamburger"></span>
         </button>
         <ul id="menu" role="menu">
-            <li><a href="index.html">Home</a></li>
-            <li class="menu-cardapio"><a href="cardapio.html">Cardapio</a>
-            <li><a href="agendamento.html">Agendamento</a></li>
-            <li><a href="quemsomos.html">Quem Somos</a></li>
+            <li><a href="index.php">Home</a></li>
+            <li><a href="quemsomos.php">Quem Somos</a></li>
+            <li><a href="agendamento.php">Agendamento</a></li>
+            <li class="menu-cardapio"><a href="cardapio.php">Cardapio</a>
             </li>
         </ul>
     </nav>
     <div class="cxlogin">
-        <a href="login.html">
+        <a href="login.php">
+           
             <button type="image" class="btn"><img class="imagebtn" src="../img/R.png"></button>
             <div>
+            </div>
         </a>
     </div>
 </header>
@@ -128,16 +130,16 @@
             </div>
             <ul class="list">
                 <li>
-                    <a href="index.html">Home</a>
+                    <a href="index.php">Home</a>
                 </li>
                 <li>
-                    <a href="cardapio.html">Cardapio</a>
+                    <a href="cardapio.php">Cardapio</a>
                 </li>
                 <li>
-                    <a href="agendamento.html">Agenda</a>
+                    <a href="agendamento.php">Agenda</a>
                 </li>
                 <li>
-                    <a href="sobrenos.html">Sobre Nos</a>
+                    <a href="sobrenos.php">Sobre Nos</a>
                 </li>
             </ul>
         </section>
